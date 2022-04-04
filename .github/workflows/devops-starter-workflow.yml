@@ -38,7 +38,7 @@ jobs:
       with:
         scope: resourcegroup
         subscriptionId: ${{ env.SUBSCRIPTIONID }}
-        resourceGroupName: ${{ env.RESOURCEGROUPNAME }}
+        resourceGroupName: ${{ env.EXISTINGRESOURCEGROUPNAME }}
         template: ./ArmTemplates/aks-applicationInsights.json
         parameters: applicationInsightsName="${{ env.EXISTINGCLUSTERNAME }}" clusterId="${{ env.EXISTINGCLUSTERID }}" appInsightsLocation="${{ env.APPINSIGHTSLOCATION }}"
 
